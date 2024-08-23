@@ -13,7 +13,7 @@ export default function Card({book}) {
                                     <img src={thumbnail}/>
                                     <div className="bottom">
                                         <h3 className="title">{bookTitle}</h3>
-                                        <p className="amount">{authors}</p>
+                                        <p className="author">{authors}</p>
                                     </div>
                                 </div>
                             </>

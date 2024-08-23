@@ -17,13 +17,34 @@ body {
 
   background-color: rgb(34, 36, 41);
   color: white;
-}
+  transition: background-color .5s;
+  }
 
 .header {
   font-size: 2rem;
   text-align: center;
   padding: 30px;
+  margin-bottom: 20px;
   color: rgb(239, 51, 51);
+}
+
+.change-theme-button {
+  position: fixed;
+  right: 50px;
+  top: 50px;
+  height: 36px;
+  padding: 8px;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  transition: background-color .5s, opacity .15s;
+}
+
+.change-theme-button:hover {
+  opacity: .7;
 }
 
 .container {
@@ -36,8 +57,7 @@ body {
 }
 
 .card {
-  color: black;
-  background: white;
+  background-color: white;
   border-radius: 1rem;
   margin-bottom: 10px;
   box-shadow: 0 0 14px slategray;
@@ -47,7 +67,7 @@ body {
 
 .card:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 30px slategray;
+  box-shadow: 0 0 30px white;
 }
 
 .card img {
@@ -68,9 +88,8 @@ body {
   color: #e00000;
 }
 
-.card .bottom .amount {
+.card .bottom .author {
   margin-bottom: 8px;
-  background-color: rgba(255,255,255,.8);
   border-radius: 8px;
   color: gray;
   font-size: 13px;
